@@ -48,6 +48,10 @@
 		<require_module>
 			org.openmrs.module.patientqueueing
 		</require_module>
+
+		<require_module>
+			org.openmrs.module.ugandaemrfingerprint
+		</require_module>
 	</require_modules>
 
 	<privilege>
@@ -79,6 +83,11 @@
         <name>App: ugandaemrpoc.pharmacy</name>
         <description>Access to the Pharmacy dashboard</description>
     </privilege>
+
+	<privilege>
+		<name>App: ugandaemrpoc.findPatient</name>
+		<description>find patient ugandaemrpoc app privilege</description>
+	</privilege>
 
 	<globalProperty>
 		<property>ugandaemrpoc.defaultDateFormat</property>

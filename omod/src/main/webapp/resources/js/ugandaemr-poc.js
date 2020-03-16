@@ -2,6 +2,13 @@
 function disable_fields(elementId){
 
     var element = jq("#"+elementId);
+
+    /* clear the input fields */
+    element.find("input[type='text']").val('');
+    element.find("input[type$='checkbox']").prop("checked", false);
+    element.find("input[type='radio']").prop("checked", false);
+
+    /* disable input fields */
     element.find("input").attr("disabled", true);
     element.find('select').attr("disabled", true);
 
@@ -276,7 +283,7 @@ function getMUACCodeFromMUACScoreByAge(age, muacScoreFieldId, muacCodeFieldId) {
 /* Get period between two dates */
 function periodBetweenDates(firstDate, secondDate) {
     var period = (secondDate.getTime() - firstDate.getTime()) / 1000;
-    diff /= (60 * 60 * 24 * 7 * 4);
+    period /= (60 * 60 * 24 * 7 * 4);
     return Math.abs(Math.round(period));
 }
 
