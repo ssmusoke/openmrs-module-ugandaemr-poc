@@ -3,7 +3,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>ugandaemrpoc</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>UgandaEMRPOC</name>
 	<description>This module introduces point of care to UgandaEMR</description>
