@@ -135,6 +135,7 @@
                 jq('#11-toggleContainer').show();
             });
 
+
             jq(document).ready(function () {
                 jq('.addEntry').on("click", function () {
                     var correctedAddButtonId = parseFloat(this.id) + 1;
@@ -2383,7 +2384,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <div class="card">
                                             <div class="card-header">DSD Model</div>
                                             <div class="card-body">
@@ -2749,7 +2749,7 @@
                                                                     <label>Hep B Results (if tested)</label>
                                                                 </div>
                                                                 <div class="col-md-8">
-                                                                    <obs id="1322" conceptId="1322" answerConceptIds="703,664"
+                                                                    <obs conceptId="1322" answerConceptIds="703,664"
                                                                          answerLabels="Neg - Negative, Pos - Positive"
                                                                          style="radio"
                                                                          class="hepB-results horizontal"/>
@@ -2915,6 +2915,7 @@
                                                                      answerLabel="{1}" style="checkbox"/>
                                                             </repeat>
                                                         </span>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -3389,9 +3390,9 @@
                                                 <repeat>
                                                     <template>
                                                         <obsgroup groupingConceptId="160741">
-                                                            <div class="row multi-drug-other" id="{id}-toggleContainer">
+                                                            <div class="row multi-drug" id="{id}-toggleContainer">
                                                                 <div class="col-md-2">
-                                                                    <obs labelText="Drug"   conceptId="1282" answerClasses="Drug" style="autocomplete" class="fullwidth"/>
+                                                                    <obs labelText="Drug" conceptId="1282" answerClasses="Drug" style="autocomplete" class="fullwidth"/>
                                                                 </div>
                                                                 <div class="col-md-2">
                                                                     <obs class="drug-strength" conceptId="1444" labelText="Strength"/>
