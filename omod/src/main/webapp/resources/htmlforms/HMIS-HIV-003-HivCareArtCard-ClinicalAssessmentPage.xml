@@ -1069,7 +1069,7 @@
                      async:false,
                      success: function(response){
                          if(response.appointmentcount &gt;= maxNumberOfBooked){
-                            getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' because there are already ' + maxNumberOfBooked + ' booked').show();
+                            getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' because the limit of ' + maxNumberOfBooked + ' has already been booked').show();
                              isValid = false;
                          }
                      },
@@ -1087,7 +1087,7 @@
                      async:false,
                      success: function(response){
                          if(response.results.length){
-                            getField('returndate.error').html('Please enter another date because ' + formattedDate + ' is a public holiday, ' + response.results[0].name).show();
+                            getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' which is a public holiday, ' + response.results[0].name).show();
                              isValid = false;
                          }
                      },
