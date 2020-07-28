@@ -1069,12 +1069,12 @@
                      async:false,
                      success: function(response){
                          if(response.appointmentcount &gt;= maxNumberOfBooked){
-                            getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' because the limit of ' + maxNumberOfBooked + ' has already been booked').show();
+                            getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' because the limit of ' + maxNumberOfBooked + ' has been reached').show();
                              isValid = false;
                          }
                      },
                     error: function(jqXHR, textStatus, errorThrown) {
-                           getField('returndate.error').html('Unable to determine the number of already booked patients on ' + formattedDate + ' due to ' + textStatus ).show();
+                           getField('returndate.error').html('Unable to determine the number of patients scheduled on ' + formattedDate + ' due to ' + textStatus ).show();
                             isValid = false;
                     }
                 });
