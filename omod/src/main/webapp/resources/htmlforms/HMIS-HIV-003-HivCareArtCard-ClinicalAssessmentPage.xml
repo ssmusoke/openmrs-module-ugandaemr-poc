@@ -1068,7 +1068,6 @@
                      url: appointmentCountURL,
                      async:false,
                      success: function(response){
-                         alert(response);
                          if(response.appointmentcount &gt;= maxNumberOfBooked){
                             getField('returndate.error').html('The patient cannot be scheduled on ' + formattedDate + ' because there are already ' + maxNumberOfBooked + ' booked').show();
                              isValid = false;
